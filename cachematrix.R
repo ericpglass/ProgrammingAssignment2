@@ -5,7 +5,7 @@
 ## set the matrix of m*m using normal random numbers
 ## get the matrix
 ## set the solved matrix
-#  get the solved matrix
+## get the solved matrix
 
 makeCacheMatrix <- function(x = matrix()) {
         as.matrix(rnorm(m*m,mean=0,sd=1), m, m)
