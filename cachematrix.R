@@ -2,10 +2,10 @@
 
 ## The first function, makeCacheMatrix creates a special "matrix" that is 
 ## invertible, and contains a function to
-## set the value of the vector
-## get the value of the vector
-## set the value of the mean
-#  get the value of the mean
+## set the matrix of m*m using normal random numbers
+## get the matrix
+## set the solved matrix
+#  get the solved matrix
 
 makeCacheMatrix <- function(x = matrix()) {
         as.matrix(rnorm(m*m,mean=0,sd=1), m, m)
@@ -15,7 +15,7 @@ makeCacheMatrix <- function(x = matrix()) {
                 m <<- NULL
         }
         get <- function() x
-        setmatrix <- function(matrix) m <<- matrix
+        setmatrix <- function(solve) m <<- solve
         getmatrix <- function() m
         list(set = set, get = get,
              setmatrix = setmatrix,
